@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title lang="en">Accessibility now!</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+    <nav id="nav" class="nav" role="navigation">
+      <ul class="navbar">
+        <li>
+          <a href="#start">Start</a>
+        </li>
+        <li>
+          <a href="#what-is-accessibility">Vad är tillgänglighet?</a>
+        </li>
+      </ul>
+    </nav>
+    <div role="main">
+      <section id="start">
+        <div class="start">
+          <h1>Lär dig skriva tillgänglig kod</h1>
+          <p>
+            Denna sida är till för att laborera med hur hen skriver tillgänglig
+            html. Den syftar till att göra det tydligt vad en användare ser och
+            vad en användare hör med hjälp av skärmläsare?
+            <br />
+            Text-innehåll på denna sidan är delvis hämtat från
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://webbriktlinjer.se"
+              >webbriktlinjer.se</a
+            >
+          </p>
+        </div>
+      </section>
+      <section id="what-is-accessibility">
+        <div class="what-is-accessibility">
+          <h2 class="title">Vad är tillgänglighet</h2>
+          <p>
+            Begreppet tillgänglighet är centralt i Vägledningen för
+            webbutveckling. Det gäller delvis med den breda betydelsen att
+            information och tjänster ska gå att nå (servern åtkomlig,
+            filformatet läsbart, säkerheten god, prestanda acceptabel och så
+            vidare). Men framför allt gäller det här i betydelsen att
+            information och tjänster ska kunna användas av alla människor
+            oavsett till exempel funktionsnedsättning (eller ”bredast möjliga
+            spektrum av egenskaper och förmågor” som det står i definitionen av
+            ”tillgänglighet” i ISO-standarden 26 800).
+          </p>
+        </div>
+      </section>
+      <section id="different-disabilities">
+        <div class="different-disabilities">
+          <h2 class="title">Olika typer av funktionsnedsättningar</h2>
+          <img
+            aria-hidden="true"
+            src="./anvandare.png"
+            alt="Bild som visar på olika typer av funktionsvariationer och att dessa kan vara permanenta, tillfälliga eller beroende på situation. "
+          />
+          <table>
+            <caption>
+              Funktionsnedsättningar är inte bara permanenta
+            </caption>
+            <tr>
+              <th scope="col">Typ av funktionsnedsättning</th>
+              <th scope="col">Permanent funktionsnedsättning</th>
+              <th scope="col">Tillfällig funktionsnedsättning</th>
+              <th scope="col">Situationsbunden funktionsnedsättning</th>
+            </tr>
+            <tr>
+              <td>Känsel</td>
+              <td>En arm</td>
+              <td>Armskapa</td>
+              <td>Nybliven förälder som bär barn på ena armen</td>
+            </tr>
+            <tr>
+              <td>Syn</td>
+              <td>Blind</td>
+              <td>Gråstarr</td>
+              <td>Distraherad chaufför</td>
+            </tr>
+            <tr>
+              <td>Hörsel</td>
+              <td>Döv</td>
+              <td>Öroninfektion</td>
+              <td>Bartender på en högljudd bar</td>
+            </tr>
+            <tr>
+              <td>Språk</td>
+              <td>Dövstum</td>
+              <td>Strupkatarr</td>
+              <td>Person som pratar med bred dialekt</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer" role="contentinfo">
+      <p>©2020 Andrea Berglund</p>
+    </footer>
+  </body>
+</html>
